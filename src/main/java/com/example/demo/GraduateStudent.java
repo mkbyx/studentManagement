@@ -17,7 +17,7 @@ public class GraduateStudent extends Student {
             }
         double average = (double) sum / getGrades().size();
         System.out.println(getName()+" is graduated with the following average: "+Math.round(average * 100.0) / 100.0);
-        setaverage(Math.round(average * 100.0) / 100.0);
+        setAverage(Math.round(average * 100.0) / 100.0);
         }
     }
 }

@@ -25,18 +25,20 @@ public class Student extends Person{
 
     public void setGrades(List<Integer> grades){
         this.grades = grades;
+        getAverageGrade();
     }
 
-    public double getaverage(){
+    public double getAverage(){
         return average;
     }
 
-    public void setaverage(double average){
+    public void setAverage(double average){
         this.average = average;
     }
 
     public void addGrade(Integer grade){
         grades.add(grade);
+        getAverageGrade();
     }
 
     public void getAverageGrade(){
@@ -47,7 +49,7 @@ public class Student extends Person{
             for(Integer grade : grades){
                 sum += grade;
             }
-        double average = (double) sum / getGrades().size();
+        average = (double) sum / getGrades().size();
         System.out.println(getName() + " an average grade of : "+Math.round(average * 100.0) / 100.0);
         average = Math.round(average * 100.0) / 100.0;
         }

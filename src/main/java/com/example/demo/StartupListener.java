@@ -9,7 +9,6 @@ public class StartupListener implements ApplicationListener<ApplicationReadyEven
 
     @Override
     public void onApplicationEvent(ApplicationReadyEvent event) {
-        // Afficher un message dans le terminal avec l'URL de l'application
         System.out.println("\nApplication started successfully!\n");
         System.out.println("Access the application at: http://localhost:8080/api/students\n");
     }

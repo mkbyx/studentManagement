@@ -21,7 +21,7 @@ public class UndergraduateStudent extends Student {
             }else{
                 System.out.println("If"+getName()+ " continues like this, he/her will fail with an average of "+Math.round(average * 100.0) / 100.0 + ". Pull yourself together!");
             }
-        setaverage(Math.round(average * 100.0) / 100.0); 
+        setAverage(Math.round(average * 100.0) / 100.0); 
         }
     }
 }
